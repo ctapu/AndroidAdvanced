@@ -1,4 +1,4 @@
-package com.wikitech.organizer.ui.home;
+package com.wikitech.organizer.presentation.home;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

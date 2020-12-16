@@ -1,8 +1,9 @@
-package com.wikitech.organizer;
+package com.wikitech.organizer.presentation;
 
 import android.os.Bundle;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.wikitech.organizer.R;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;

@@ -1,4 +1,4 @@
-package com.wikitech.organizer.ui.notifications;
+package com.wikitech.organizer.presentation.notifications;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
