@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1043346076788",
+    "firebase_url": "https://organizer-51dc9-default-rtdb.firebaseio.com",
+    "project_id": "organizer-51dc9",
+    "storage_bucket": "organizer-51dc9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1043346076788:android:76718a0943b98ddf650d21",
+        "android_client_info": {
+          "package_name": "com.wikitech.organizer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1043346076788-dtmofcsn1j1ma1mf0jh7m5sapol1s1hf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2k3F-_FkwU5vkBh3YKzwjA5HKkowyjgE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1043346076788-dtmofcsn1j1ma1mf0jh7m5sapol1s1hf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
