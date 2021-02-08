@@ -1,19 +1,30 @@
 package com.wikitech.organizer.presentation.home;
 
+import android.util.Log;
+
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
 public class HomeViewModel extends ViewModel {
 
-    private MutableLiveData<String> mText;
+    public static final String LOG_TAG = "home_tag";
 
-    public HomeViewModel() {
-        mText = new MutableLiveData<>();
-        mText.setValue("This is home fragment");
+    public MutableLiveData<Class> navigationLiveData = new MutableLiveData<>();
+
+    public void onDayStatementButtonHit() {
+        Log.d(LOG_TAG, "Day statement button was hit!");
+
+        navigate();
     }
 
-    public LiveData<String> getText() {
-        return mText;
+    public void onNightStatementButtonHit() {
+        Log.d(LOG_TAG, "Day statement button was hit!");
+
+        navigate();
+    }
+
+    public void navigate() {
+        //navigationLiveData.setValue(HeavyActivity.class);
     }
 }
