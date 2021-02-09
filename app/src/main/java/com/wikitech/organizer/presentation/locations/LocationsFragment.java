@@ -13,7 +13,7 @@ import androidx.lifecycle.ViewModelProvider;
 import com.wikitech.organizer.R;
 import com.wikitech.organizer.data.local.LocationInMemoryDataSource;
 import com.wikitech.organizer.data.remote.LocationRemoteDataSource;
-import com.wikitech.organizer.data.api.LocationApi;
+import com.wikitech.organizer.data.remote.api.LocationApi;
 import com.wikitech.organizer.databinding.FragmentLocationsBinding;
 import com.wikitech.organizer.domain.FetchLocationItemsUseCase;
 import com.wikitech.organizer.domain.LocationItemsMediator;
