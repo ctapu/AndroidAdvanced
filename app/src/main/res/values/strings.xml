@@ -8,4 +8,5 @@
     <string name="password">Password</string>
     <string name="day_statement">Day statement</string>
     <string name="night_statement">Night statement</string>
+    <string name="welcome_text">Let\'s complete your statement</string>
 </resources>
