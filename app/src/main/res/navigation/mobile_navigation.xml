@@ -6,20 +6,20 @@
     app:startDestination="@+id/navigation_home">
 
     <fragment
+        android:id="@+id/navigation_locations"
+        android:name="com.wikitech.organizer.presentation.locations.LocationsFragment"
+        android:label="@string/title_locations"
+        tools:layout="@layout/fragment_locations" />
+
+    <fragment
         android:id="@+id/navigation_home"
         android:name="com.wikitech.organizer.presentation.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.wikitech.organizer.presentation.profile.ProfileFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_profile" />
-
-    <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.wikitech.organizer.presentation.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_people"
+        android:name="com.wikitech.organizer.presentation.people.PeopleFragment"
+        android:label="@string/title_people"
+        tools:layout="@layout/fragment_people" />
 </navigation>
