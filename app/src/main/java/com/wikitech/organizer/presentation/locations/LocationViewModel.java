@@ -17,7 +17,7 @@ public class LocationViewModel extends ViewModel {
     public ObservableArrayList<LocationItem> locations = new ObservableArrayList<>();
 
     public LocationViewModel(FetchLocationItemsUseCase fetchItemsUseCase){
-        Log.d(LOG_TAG, "My button was hit from view model");
+        Log.d(LOG_TAG, "Locations displayed");
 
         LiveData<List<LocationItem>> liveItems = fetchItemsUseCase.execute();
         liveItems.observeForever(locationItems -> locations.addAll(locationItems));
