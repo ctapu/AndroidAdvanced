@@ -15,6 +15,8 @@ import androidx.navigation.ui.NavigationUI;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static final int NOTIFICATION_LAUNCH_CODE = 14;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
