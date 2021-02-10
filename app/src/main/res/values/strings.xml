@@ -9,4 +9,7 @@
     <string name="day_statement">Day statement</string>
     <string name="night_statement">Night statement</string>
     <string name="welcome_text">Let\'s complete your statement</string>
+    <string name="saved_people">Previous persons</string>
+    <string name="name">Name:</string>
+    <string name="birthDate">Birthdate:</string>
 </resources>
