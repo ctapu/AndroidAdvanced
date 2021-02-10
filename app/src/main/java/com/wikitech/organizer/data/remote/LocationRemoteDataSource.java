@@ -13,7 +13,7 @@ import java.util.List;
 import retrofit2.Response;
 
 public class LocationRemoteDataSource implements LocationItemsRepository {
-    private static final String TAG = "remote-source";
+    private static final String TAG = "location-remote-source";
     private final LocationApi api;
 
     public LocationRemoteDataSource(LocationApi api) {

@@ -38,11 +38,11 @@ public class LocationsFragment extends Fragment {
             }
         };
 
-        LocationViewModel viewModel = new ViewModelProvider(this, factory).get(LocationViewModel.class);
+        locationViewModel = new ViewModelProvider(this, factory).get(LocationViewModel.class);
 
         FragmentLocationsBinding binding =
                 DataBindingUtil.setContentView(getActivity(), R.layout.fragment_locations);
-        binding.setLocationsViewModel(viewModel);
+        binding.setLocationsViewModel(locationViewModel);
     }
 
       private FetchLocationItemsUseCase createUseCase() {
