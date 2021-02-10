@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/navigation_people"
-        android:name="com.wikitech.organizer.presentation.people.PeopleFragment"
+        android:name="com.wikitech.organizer.presentation.people.PersonsFragment"
         android:label="@string/title_people"
         tools:layout="@layout/fragment_people" />
 </navigation>
