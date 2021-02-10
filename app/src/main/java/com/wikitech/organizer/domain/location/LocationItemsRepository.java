@@ -1,4 +1,4 @@
-package com.wikitech.organizer.domain;
+package com.wikitech.organizer.domain.location;
 
 import com.wikitech.organizer.data.model.LocationItemDto;
 

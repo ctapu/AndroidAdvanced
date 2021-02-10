@@ -4,7 +4,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.databinding.BindingAdapter;
 
-import com.wikitech.organizer.domain.LocationItem;
+import com.wikitech.organizer.domain.location.LocationItem;
 
 import java.util.List;
 

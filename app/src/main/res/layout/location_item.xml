@@ -6,7 +6,7 @@
 
         <variable
             name="model"
-            type="com.wikitech.organizer.domain.LocationItem" />
+            type="com.wikitech.organizer.domain.location.LocationItem" />
     </data>
 
     <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"

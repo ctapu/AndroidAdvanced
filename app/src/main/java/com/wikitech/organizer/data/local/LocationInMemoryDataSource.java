@@ -1,7 +1,7 @@
 package com.wikitech.organizer.data.local;
 
 import com.wikitech.organizer.data.model.LocationItemDto;
-import com.wikitech.organizer.domain.LocationItemsRepository;
+import com.wikitech.organizer.domain.location.LocationItemsRepository;
 
 import java.util.Arrays;
 import java.util.List;

@@ -15,9 +15,9 @@ import com.wikitech.organizer.data.local.LocationInMemoryDataSource;
 import com.wikitech.organizer.data.remote.LocationRemoteDataSource;
 import com.wikitech.organizer.data.remote.api.LocationApi;
 import com.wikitech.organizer.databinding.FragmentLocationsBinding;
-import com.wikitech.organizer.domain.FetchLocationItemsUseCase;
-import com.wikitech.organizer.domain.LocationItemsMediator;
-import com.wikitech.organizer.domain.LocationItemsRepository;
+import com.wikitech.organizer.domain.location.FetchLocationItemsUseCase;
+import com.wikitech.organizer.domain.location.LocationItemsMediator;
+import com.wikitech.organizer.domain.location.LocationItemsRepository;
 
 public class LocationsFragment extends Fragment {
 

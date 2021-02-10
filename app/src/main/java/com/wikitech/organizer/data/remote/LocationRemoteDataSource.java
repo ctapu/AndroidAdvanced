@@ -4,7 +4,7 @@ import android.util.Log;
 
 import com.wikitech.organizer.data.remote.api.LocationApi;
 import com.wikitech.organizer.data.model.LocationItemDto;
-import com.wikitech.organizer.domain.LocationItemsRepository;
+import com.wikitech.organizer.domain.location.LocationItemsRepository;
 
 import java.io.IOException;
 import java.util.Collections;

@@ -1,4 +1,4 @@
-package com.wikitech.organizer.domain;
+package com.wikitech.organizer.domain.location;
 
 public class LocationItem {
     private final String name;

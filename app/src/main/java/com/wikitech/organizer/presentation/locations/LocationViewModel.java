@@ -6,8 +6,8 @@ import androidx.databinding.ObservableArrayList;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.wikitech.organizer.domain.FetchLocationItemsUseCase;
-import com.wikitech.organizer.domain.LocationItem;
+import com.wikitech.organizer.domain.location.FetchLocationItemsUseCase;
+import com.wikitech.organizer.domain.location.LocationItem;
 
 import java.util.List;
 

@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView.Adapter;
 
 import com.wikitech.organizer.R;
 import com.wikitech.organizer.databinding.LocationItemBinding;
-import com.wikitech.organizer.domain.LocationItem;
+import com.wikitech.organizer.domain.location.LocationItem;
 
 import java.util.ArrayList;
 import java.util.List;
