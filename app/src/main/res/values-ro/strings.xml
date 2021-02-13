@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Organizator</string>
+    <string name="title_home">Acasa</string>
+    <string name="title_locations">Locatii</string>
+    <string name="title_people">Persoane</string>
+    <string name="login">Login</string>
+    <string name="username">Nume de utilizator</string>
+    <string name="password">Parola</string>
+    <string name="day_statement">Declaratie ziua</string>
+    <string name="night_statement">Declaratie noapte</string>
+    <string name="welcome_text">Sa completa o declaratie</string>
+    <string name="saved_people">Persoane anterioare</string>
+    <string name="name">Nume:</string>
+    <string name="birthDate">Zi de nastere:</string>
+</resources>
