@@ -12,9 +12,9 @@ import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.GET;
 
 public interface LocationApi {
-    String BASE_URL = "TODO";
+    String BASE_URL = "https://console.firebase.google.com/u/0/project/organizer-51dc9/firestore/data~2Flocations";
 
-    @GET("items.json")
+    @GET("locations.json")
     Call<List<LocationItemDto>> getItems();
 
     static LocationApi createApi() {

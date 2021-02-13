@@ -12,9 +12,9 @@ import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.GET;
 
 public interface PeopleApi {
-    String BASE_URL = "TODO";
+    String BASE_URL = "https://console.firebase.google.com/u/0/project/organizer-51dc9/firestore/data~2Fpeople";
 
-    @GET("items.json")
+    @GET("people.json")
     Call<List<PersonItemDto>> getItems();
 
     static PeopleApi createApi() {
