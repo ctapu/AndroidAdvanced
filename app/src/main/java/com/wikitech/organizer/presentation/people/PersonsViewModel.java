@@ -11,13 +11,15 @@ import com.wikitech.organizer.domain.people.PersonItem;
 
 import java.util.List;
 
+import timber.log.Timber;
+
 public class PersonsViewModel extends ViewModel {
 
     public static final String LOG_TAG = "People_tag";
     public ObservableArrayList<PersonItem> people = new ObservableArrayList<>();
 
     public PersonsViewModel(FetchPersonItemsUseCase fetchItemsUseCase){
-        Log.d(LOG_TAG, "People displayed");
+        Timber.d("People displayed");
 
         LiveData<List<PersonItem>> liveItems = fetchItemsUseCase.execute();
         liveItems.observeForever(personItems -> people.addAll(personItems));

@@ -19,6 +19,8 @@ import com.wikitech.organizer.domain.people.FetchPersonItemsUseCase;
 import com.wikitech.organizer.domain.people.PersonItemsMediator;
 import com.wikitech.organizer.domain.people.PersonItemsRepository;
 
+import timber.log.Timber;
+
 public class PersonsFragment extends Fragment {
 
     private static final String LOG_TAG = "People";
@@ -27,7 +29,7 @@ public class PersonsFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.i(LOG_TAG,"PeopleFragment created");
+        Timber.i("PeopleFragment created");
 
         ViewModelProvider.Factory factory = new ViewModelProvider.Factory() {
             @NonNull

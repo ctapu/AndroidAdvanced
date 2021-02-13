@@ -19,6 +19,8 @@ import com.wikitech.organizer.domain.location.FetchLocationItemsUseCase;
 import com.wikitech.organizer.domain.location.LocationItemsMediator;
 import com.wikitech.organizer.domain.location.LocationItemsRepository;
 
+import timber.log.Timber;
+
 public class LocationsFragment extends Fragment {
 
     private static final String LOG_TAG = "Locations";
@@ -27,7 +29,7 @@ public class LocationsFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.i(LOG_TAG,"LocationsFragment created");
+        Timber.i("LocationsFragment created");
 
         ViewModelProvider.Factory factory = new ViewModelProvider.Factory() {
             @NonNull

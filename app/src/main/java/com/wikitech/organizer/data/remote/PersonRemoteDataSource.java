@@ -11,6 +11,7 @@ import java.util.Collections;
 import java.util.List;
 
 import retrofit2.Response;
+import timber.log.Timber;
 
 public class PersonRemoteDataSource implements PersonItemsRepository {
     private static final String TAG = "people-remote-source";
@@ -26,7 +27,7 @@ public class PersonRemoteDataSource implements PersonItemsRepository {
             Response<List<PersonItemDto>> response = api.getItems().execute();
             return response.body();
         } catch (IOException e) {
-            Log.w(TAG, "Something went wrong", e);
+            Timber.tag(TAG).w(e, "Something went wrong");
             return Collections.emptyList();
         }
     }
