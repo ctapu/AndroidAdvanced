@@ -8,11 +8,9 @@ import androidx.annotation.Nullable;
 
 import com.wikitech.organizer.data.local.SharedPreferencesDataSource;
 import com.wikitech.organizer.data.model.PermissionsItemDto;
-import com.wikitech.organizer.data.remote.api.PermissionsApi;
+import com.wikitech.organizer.data.remote.PermissionsRemoteDataSource;
 import com.wikitech.organizer.domain.di.Container;
 import com.wikitech.organizer.presentation.notification.NotificationFactory;
-
-import java.io.IOException;
 
 import timber.log.Timber;
 
@@ -24,14 +22,14 @@ public class MainService extends Service {
     public static int TYPE_BASIC = 0;
     public static int TYPE_FINISH = 2;
 
-    private PermissionsApi permissionsApi;
+    private PermissionsRemoteDataSource permissionsRemoteDataSource;
     private SharedPreferencesDataSource sharedPreferencesDataSource;
 
 
     @Override
     public void onCreate() {
         super.onCreate();
-        permissionsApi = Container.getInstance().getPermissionsApi();
+        permissionsRemoteDataSource = Container.getInstance().getPermissionsRemoteDataSource();
         sharedPreferencesDataSource = Container.getInstance().getSharedPreferencesDataSource(this);
     }
 
@@ -42,19 +40,14 @@ public class MainService extends Service {
         if (type == TYPE_BASIC) {
             startForeground(SERVICE_NOTIFICATION_ID, NotificationFactory.createProcessingWorkNotification(this));
 
-            try {
-                String currentVersion = sharedPreferencesDataSource.getString(SharedPreferencesDataSource.VERSION_KEY);
-                PermissionsItemDto info = permissionsApi.getInfo().execute().body();
+            String currentVersion = sharedPreferencesDataSource.getString(SharedPreferencesDataSource.VERSION_KEY);
+            PermissionsItemDto info = permissionsRemoteDataSource.getInfo();
 
-                if(currentVersion.equals(info.version)){
-                    stopSelf();
-                }
-                else{
-                    startForeground(SERVICE_NOTIFICATION_ID, NotificationFactory.createNewPermissionsNotification(this));
-                    sharedPreferencesDataSource.putString(SharedPreferencesDataSource.VERSION_KEY, info.version);
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
+            if (currentVersion.equals(info.version)) {
+                stopSelf();
+            } else {
+                startForeground(SERVICE_NOTIFICATION_ID, NotificationFactory.createNewPermissionsNotification(this));
+                sharedPreferencesDataSource.putString(SharedPreferencesDataSource.VERSION_KEY, info.version);
             }
         } else {
             Timber.w("Unknown service type. Killing.");
