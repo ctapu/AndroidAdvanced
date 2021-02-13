@@ -1,5 +1,6 @@
 App name: Organizer
 Location: https://github.com/ctapu/AndroidAdvanced.git
-Backend: [Firebase link]
-Reviewers: [at least 1 other dev that will review your code/project]
-Reviewed: [app name/s you'll perform code review for]
+Backend: https://console.firebase.google.com/u/0/project/organizer-51dc9/firestore/data
+Reviewers: Marius Bardan :)
+Reviewed: Paul Coman's project
+
